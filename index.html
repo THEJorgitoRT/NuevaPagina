@@ -51,9 +51,7 @@
 using namespace std;
 int main() {
     double mph, gal;
-    cout &lt;&lt; "Ingrese velocidad en mph: ";
     cin &gt;&gt; mph;
-    cout &lt;&lt; "Ingrese capacidad en galones: ";
     cin &gt;&gt; gal;
     double kmh = mph * 1.60934;
     double litros = gal * 3.78541;
@@ -76,9 +74,7 @@ int main() {
 using namespace std;
 int main() {
     double peso, distancia;
-    cout &lt;&lt; "Peso en kg: ";
     cin &gt;&gt; peso;
-    cout &lt;&lt; "Distancia en km: ";
     cin &gt;&gt; distancia;
     double costo = peso * 5000;
     int tramos = distancia / 100;
@@ -101,7 +97,6 @@ int main() {
 using namespace std;
 int main() {
     double compra;
-    cout &lt;&lt; "Valor de la compra: ";
     cin &gt;&gt; compra;
     if(compra &gt; 200000) compra *= 0.8;
     else if(compra &gt; 100000) compra *= 0.9;
@@ -123,9 +118,7 @@ int main() {
 using namespace std;
 int main() {
     double d, v;
-    cout &lt;&lt; "Distancia (km): ";
     cin &gt;&gt; d;
-    cout &lt;&lt; "Velocidad (km/h): ";
     cin &gt;&gt; v;
     double t = d / v;
     cout &lt;&lt; "Tiempo de vuelo: " &lt;&lt; t &lt;&lt; " horas" &lt;&lt; endl;
@@ -147,9 +140,7 @@ using namespace std;
 int main() {
     double cuenta;
     char propina;
-    cout &lt;&lt; "Valor de la cuenta: ";
     cin &gt;&gt; cuenta;
-    cout &lt;&lt; "Desea incluir 10% propina? (s/n): ";
     cin &gt;&gt; propina;
     if(propina == 's' || propina == 'S') cuenta *= 1.1;
     cout &lt;&lt; "Total a pagar: $" &lt;&lt; cuenta &lt;&lt; endl;
@@ -171,9 +162,7 @@ using namespace std;
 int main() {
     int horas;
     double valor;
-    cout &lt;&lt; "Horas trabajadas: ";
     cin &gt;&gt; horas;
-    cout &lt;&lt; "Valor por hora: ";
     cin &gt;&gt; valor;
     double salario = horas * valor;
     cout &lt;&lt; "Su salario mensual es: $" &lt;&lt; salario &lt;&lt; endl;
@@ -194,7 +183,6 @@ int main() {
 using namespace std;
 int main() {
     int segundos;
-    cout &lt;&lt; "Tiempo en segundos: ";
     cin &gt;&gt; segundos;
     int minutos = segundos / 60;
     int seg_rest = segundos % 60;
@@ -216,9 +204,7 @@ int main() {
 using namespace std;
 int main() {
     double consumo, valor;
-    cout &lt;&lt; "Consumo en kWh: ";
     cin &gt;&gt; consumo;
-    cout &lt;&lt; "Valor por kWh: ";
     cin &gt;&gt; valor;
     double costo = consumo * valor;
     cout &lt;&lt; "El valor del consumo es: $" &lt;&lt; costo &lt;&lt; endl;
@@ -239,7 +225,6 @@ int main() {
 using namespace std;
 int main() {
     double nudos;
-    cout &lt;&lt; "Velocidad en nudos: ";
     cin &gt;&gt; nudos;
     double kmh = nudos * 1.852;
     cout &lt;&lt; "Velocidad en km/h: " &lt;&lt; kmh &lt;&lt; endl;
@@ -265,9 +250,7 @@ using namespace std;
 int main() {
     int personas;
     double consumo;
-    cout &lt;&lt; "Personas en el hogar: ";
     cin &gt;&gt; personas;
-    cout &lt;&lt; "Consumo real mensual (litros): ";
     cin &gt;&gt; consumo;
     double recomendado = personas * 50 * 30;
     cout &lt;&lt; "Consumo recomendado: " &lt;&lt; recomendado &lt;&lt; " litros" &lt;&lt; endl;
